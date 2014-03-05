@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.txt-green{
+	color: #82AD1E;
+}
+
+.txt-orange{
+	color: #F5A900;
+}
+
+.user-card{
+	width: 300px;
+	height: 150px;
+	padding: 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+}
+
+.username{
+	display: block;
+}
+
+.username.left{
+	margin:20px 0 0 20px;
+}
+
+.username.right{
+	margin: 20px 20px 0 0;
+}
+
+.user-card{
+	display: none;
+	position: absolute;
+}
+
+.user-card .mod-body span{
+	margin-right: 10px;
+}
+.user-card .mod-body span em
+{
+	font-style: normal;
+}
+
+.user-card .mod-footer{
+	line-height: 30px;
+}
+
+#layout{
+	height: 800px;
+	width: 100%;
+}

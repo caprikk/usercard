@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+		<title>用户小卡片效果</title>
+  		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"  media="screen">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+
+	</head>
+
+	<body>
+    	<a href="#" class="username effect-normal left pull-left">用户小卡片效果(默认)</a>
+		<a href="#" class="username effect-extend right pull-right">用户小卡片效果(传参)</a>
+		<div id="layout"></div>
+		<a href="#" class="username effect-normal pull-left">用户小卡片效果</a>
+		<a href="#" class="username effect-normal right pull-right">用户小卡片效果</a>
+
+    	<div id="ajax-box"></div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.usercard.js"></script>
+	    <script type="text/javascript">
+	    $(function()
+	    {
+	    	$('.effect-normal').userCard();
+	    	$('.effect-extend').userCard({
+	    		'name': 'capri',
+	    		'introduce': 'Hello World',
+	    		'fans': '30000',
+	    		'follow': '100'
+	    	});
+	    });
+	    </script>
+	</body>
+</html>
